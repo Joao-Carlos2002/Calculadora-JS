@@ -17,3 +17,11 @@ function calcular(){
         document.getElementById("resultado").innerHTML = "Nada para calcular!"
     }
 }
+function hours(){
+    today = new Date();
+    hour= today.getHours();
+    minute= today.getMinutes();
+    second= today.getSeconds();
+    document.getElementById("clock").innerHTML = hour + ':' + minute + ':' + second;
+    setTimeout('hours()', 500);
+}
